@@ -2,10 +2,29 @@ body {
   padding: 0;
   margin: 0;
 }
+/* hero image*/
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("HeroImage.jpeg");
+
+  /* Set a specific height */
+  height: 100px;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 100px;
+  color: white;
+}
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 100%;
+
+  border-radius: 4px;
 }
 
 .card:hover {
@@ -28,17 +47,12 @@ a {
   justify-content: space-between;
   height: 100%;
 }
-
-/* #movies {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
-  padding: 4rem 16rem;
-  justify-content: center;
-  margin: 20px 20px 20px 20px;
-} */
 h1 {
   text-align: center;
+  margin: 0;
+  padding: 0;
+  align-content: space-around;
+  margin-bottom: 0 !important;
 }
 #movie-details {
   display: flex;
@@ -56,16 +70,6 @@ h1 {
   margin: 20px 20px 20px 20px;
   align-items: stretch;
 }
-
-/* #similar-movies {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
-  padding: 20px;
-  justify-content: center;
-  margin: 20px 20px 20px 20px;
-} */
-
 #movie-name {
   margin-right: 10px;
   padding: 5px;
@@ -86,6 +90,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 #movie-name {
@@ -115,6 +121,7 @@ nav {
   color: white;
   padding: 14px 16px;
   text-align: right;
+  font-size: 25px;
 }
 nav ul li {
   display: inline;
@@ -122,4 +129,36 @@ nav ul li {
 }
 title {
   color: white;
+}
+.container {
+  border: solid black 4px;
+  border-radius: 10px;
+}
+
+/* media queries */
+/* Mobile media query*/
+@media screen and (max-width: 425px) {
+  .movies-container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+  }
+
+  #movie-details {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* tablet media query*/
+@media screen and (max-width: 768px) and (min-width: 426px) {
+  .movies-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+    padding: 30px;
+  }
+  #movie-details {
+    margin: 0;
+    padding: 8px;
+  }
 }
