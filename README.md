@@ -8,5 +8,5 @@ Primary function and added features
   * add responsiveness through out for mobile and tablet
   *   mobile will only display 1 column and tablet will display 2
   *   server.mjs is new
-  *     mjs is a JavaScript source code file that is used as an ECMA Module (ECMAScript Module) in Node
+  *   mjs is a JavaScript source code file that is used as an ECMA Module (ECMAScript Module) in Node
   * 
