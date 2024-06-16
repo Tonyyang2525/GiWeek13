@@ -14,10 +14,10 @@ Primary function and added features
 
 # Steps to running this project
 
-    * Clone repo
-    * Install packages
-      npm i
-    * Add env access token for `DBMOVIE_ACCESS_TOKEN`
-    * Run express server called server.mjs
-       node server.mjs
-    * Open live server for front end
+- Clone repo
+- Install packages
+  npm i
+- Add env access token for `DBMOVIE_ACCESS_TOKEN`
+- Run express server called server.mjs
+  node server.mjs
+- Open live server for front end
