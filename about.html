@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Home</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <title>Movie Finder</title>
+          <li><a href="/index.html">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Movie Finder</h1>
+    <div class="search-container">
+      <input type="text" id="movie-name" placeholder="Enter movie name" />
+      <button id="search" onclick="clickSearch()">Search</button>
+    </div>
+
+    <div id="movie-search-container">
+      <div id="movie-details"></div>
+      <h1>Similar Movies</h1>
+      <div id="similar-movies" class="movies-container"></div>
+    </div>
+    <div id="movies" class="movies-container"></div>
+    <script src="./about.js"></script>
+    <script src="./app.js"></script>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+  </body>
+</html>

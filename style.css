@@ -1,0 +1,125 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 100%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-text,
+.container {
+  padding: 2px 16px;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.card-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* #movies {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 4rem 16rem;
+  justify-content: center;
+  margin: 20px 20px 20px 20px;
+} */
+h1 {
+  text-align: center;
+}
+#movie-details {
+  display: flex;
+  margin-left: 16rem;
+  margin-right: 16rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+.movies-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 4rem 16rem;
+
+  margin: 20px 20px 20px 20px;
+  align-items: stretch;
+}
+
+/* #similar-movies {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  margin: 20px 20px 20px 20px;
+} */
+
+#movie-name {
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+#search {
+  padding: 5px 10px;
+}
+body {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+/* search bar */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#movie-name {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+#search {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* navbar*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  padding: 14px 16px;
+  text-align: right;
+}
+nav ul li {
+  display: inline;
+  margin-left: 40px;
+}
+title {
+  color: white;
+}
